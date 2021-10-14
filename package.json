@@ -1,0 +1,48 @@
+{
+  "name": "placeholder-package-name",
+  "version": "0.1.0",
+  "description": "",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "bin": {
+    "placeholder-package-name": "build/bin/index.js"
+  },
+  "private": true,
+  "license": "ISC",
+  "author": "<package-author> <<package-email>>",
+  "keywords": [],
+  "engines": {
+    "node": ">=16.9",
+    "npm": ">=7.20"
+  },
+  "scripts": {
+    "analyse": "npx carna analyse",
+    "build": "npx carna build",
+    "prebuild": "rm -rf ./build ./packages/*/build",
+    "prepare": "[ \"$CI\" != \"\" ] || husky install ./node_modules/carna/configs/husky",
+    "test": "npx carna test",
+    "test:watch": "npx carna test -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/placeholder-github-username/placeholder-github-repo"
+  },
+  "bugs": {
+    "url": "https://github.com/placeholder-github-username/placeholder-github-repo/issues/new"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "@types/pino": "6.3.11",
+    "pino": "6.13.3"
+  },
+  "devDependencies": {
+    "@types/node": "16.10.3",
+    "carna": "5.0.0",
+    "typescript": "4.4.3"
+  }
+}
