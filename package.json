@@ -41,7 +41,7 @@
     "pino": "6.13.3"
   },
   "devDependencies": {
-    "@types/node": "16.10.3",
+    "@types/node": "16.11.0",
     "carna": "5.0.0",
     "typescript": "4.4.3"
   }
