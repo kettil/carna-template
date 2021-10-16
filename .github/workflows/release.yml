@@ -10,12 +10,13 @@ on:
 
 jobs:
   release:
+    if: ${{ false }}  # disable for now
     name: Release
     runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [16.x]
         os: [ubuntu-latest]
 
     steps:
