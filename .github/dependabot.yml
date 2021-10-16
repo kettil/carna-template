@@ -8,9 +8,9 @@ updates:
       timezone: 'UTC'
     open-pull-requests-limit: 10
     reviewers:
-      - 'github-username'
+      - 'kettil'
     assignees:
-      - 'github-username'
+      - 'kettil'
     labels:
       - dependencies
     versioning-strategy: increase
