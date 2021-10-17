@@ -16,7 +16,7 @@
     "npm": ">=7.20"
   },
   "scripts": {
-    "preinstall": "mkdir -p ./build/bin ./packages/*/build/bin && touch ./build/bin/index.js ./packages/*/build/bin/index.js",
+    "prepare": "mkdir -p ./build/bin ./packages/*/build/bin && touch ./build/bin/index.js ./packages/*/build/bin/index.js",
     "analyse": "npx carna analyse",
     "build": "npx carna build",
     "prebuild": "rm -rf ./build ./packages/*/build",
