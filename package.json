@@ -16,11 +16,11 @@
     "npm": ">=7.20"
   },
   "scripts": {
-    "prepare": "mkdir -p ./build/bin ./packages/*/build/bin && touch ./build/bin/index.js ./packages/*/build/bin/index.js",
+    "preinstall": "mkdir -p ./build/bin ./packages/*/build/bin && touch ./build/bin/index.js ./packages/*/build/bin/index.js",
     "analyse": "npx carna analyse",
     "build": "npx carna build",
     "prebuild": "rm -rf ./build ./packages/*/build",
-    "prepare": "[ \"$CI\" != \"\" ] || husky install ./node_modules/carna/configs/husky",
+    "prepare": "mkdir -p ./build/bin ./packages/*/build/bin && touch ./build/bin/index.js ./packages/*/build/bin/index.js && [ \"$CI\" != \"\" ] || husky install ./node_modules/carna/configs/husky",
     "test": "npx carna test",
     "test:watch": "npx carna test -w"
   },
