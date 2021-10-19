@@ -22,7 +22,7 @@
     "pino": "6.13.3"
   },
   "devDependencies": {
-    "@types/pino": "6.3.11",
+    "@types/pino": "6.3.12",
     "carna": "5.0.0"
   }
 }
