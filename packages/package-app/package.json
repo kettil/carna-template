@@ -9,14 +9,12 @@
   "author": "<package-author> <<package-email>>",
   "keywords": [],
   "engines": {
-    "node": ">=16.9",
-    "npm": ">=7.20"
+    "node": ">=16.12",
+    "npm": ">=8.1"
   },
   "scripts": {
     "start": "node ./build/index.js",
-    "dev": "npx carna start -w",
-    "build": "npx carna build",
-    "analyse": "npx carna analyse"
+    "dev": "npx carna start -w"
   },
   "dependencies": {
     "pino": "6.13.3"

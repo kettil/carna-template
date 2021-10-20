@@ -12,16 +12,15 @@
   "author": "<package-author> <<package-email>>",
   "keywords": [],
   "engines": {
-    "node": ">=16.9",
-    "npm": ">=7.20"
+    "node": ">=16.12",
+    "npm": ">=8.1"
   },
   "scripts": {
     "analyse": "npx carna analyse",
     "build": "npx carna build",
-    "prebuild": "rm -rf ./build ./packages/*/build",
-    "prepare": "[ \"$CI\" != \"\" ] || husky install ./node_modules/carna/configs/husky",
     "test": "npx carna test",
-    "test:watch": "npx carna test -w"
+    "precarna:build": "rm -rf ./build ./packages/*/build",
+    "prepare": "[ \"$CI\" != \"\" ] || husky install ./node_modules/carna/configs/husky"
   },
   "repository": {
     "type": "git",
