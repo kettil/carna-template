@@ -10,7 +10,7 @@ on:
 
 jobs:
   release:
-    if: ${{ false }}  # disable for now
+    if: ${{ false }} # disable for now
     name: Release
     runs-on: ${{ matrix.os }}
 
