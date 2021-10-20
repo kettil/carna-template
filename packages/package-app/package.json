@@ -19,7 +19,7 @@
     "analyse": "npx carna analyse"
   },
   "dependencies": {
-    "pino": "6.13.3"
+    "pino": "7.0.3"
   },
   "devDependencies": {
     "@types/pino": "6.3.11",
