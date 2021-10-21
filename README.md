@@ -97,14 +97,14 @@ For a single repository the monorepo entries have to be deleted and for a monore
 
 Replace the following variable in the project with the respective values:
 
-| Key                            | Description                                        |
-| ------------------------------ | -------------------------------------------------- |
-| `placeholder-package-name`     | Package name                                       |
-| `placeholder-package-name-app` | Package name from package-app (only with monorepo) |
-| `placeholder-package-name-cli` | Package name from package-cli (only with monorepo) |
-| `placeholder-package-name-lib` | Package name from package-lib (only with monorepo) |
-| `placeholder-github-username`  | Github username (from the URL)                     |
-| `placeholder-github-repo`      | Github repository (from the URL)                   |
+| Key                        | Description                                        |
+| -------------------------- | -------------------------------------------------- |
+| `placeholder-package-name` | Package name                                       |
+| `package-name-app`         | Package name from package-app (only with monorepo) |
+| `package-name-cli`         | Package name from package-cli (only with monorepo) |
+| `package-name-lib`         | Package name from package-lib (only with monorepo) |
+| `kettil`                   | Github username (from the URL)                     |
+| `github-repo`              | Github repository (from the URL)                   |
 
 The following values can or should be adjusted in the `package.json`:
 

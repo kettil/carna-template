@@ -24,10 +24,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/placeholder-github-username/placeholder-github-repo"
+    "url": "https://github.com/kettil/github-repo"
   },
   "bugs": {
-    "url": "https://github.com/placeholder-github-username/placeholder-github-repo/issues/new"
+    "url": "https://github.com/kettil/github-repo/issues/new"
   },
   "publishConfig": {
     "access": "public"
