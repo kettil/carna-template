@@ -27,7 +27,5 @@
     "access": "public"
   },
   "dependencies": {},
-  "devDependencies": {
-    "carna": "5.0.0"
-  }
+  "devDependencies": {}
 }
