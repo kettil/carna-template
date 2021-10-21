@@ -21,6 +21,6 @@
   },
   "devDependencies": {
     "@types/pino": "6.3.11",
-    "carna": "5.0.0"
+    "carna": "5.1.0"
   }
 }
