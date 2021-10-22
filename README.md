@@ -38,6 +38,7 @@ Delete the following keys in `package.json` with the subvalues:
 Delete the following folders or files:
 
 ```bash
+rm -rf ./.env
 rm -rf ./packages
 ```
 
@@ -54,6 +55,7 @@ Delete the following keys in `package.json` with the subvalues:
 Delete the following folders or files:
 
 ```bash
+rm -rf ./.env
 rm -rf ./src/bin ./packages
 ```
 
@@ -75,6 +77,7 @@ Delete the following folders or files:
 ```bash
 rm -rf ./.github/workflows/release.yml ./.releaserc.json
 rm -rf ./src ./tests
+rm -rf ./.env # if no "app" is built
 ```
 
 Delete the following keys in `package.json` with the subvalues:
@@ -84,7 +87,9 @@ Delete the following keys in `package.json` with the subvalues:
   "bin": {},
   "repository": {},
   "bugs": {},
-  "publishConfig": {}
+  "publishConfig": {},
+  "scripts.start": "",
+  "scripts.dev": ""
 }
 ```
 

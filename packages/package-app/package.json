@@ -17,9 +17,10 @@
     "dev": "npx carna start -w"
   },
   "dependencies": {
-    "pino": "6.13.3"
+    "@types/pino": "6.3.12",
+    "dotenv": "10.0.0",
+    "pino": "6.13.3",
+    "yup": "0.32.11"
   },
-  "devDependencies": {
-    "@types/pino": "6.3.12"
-  }
+  "devDependencies": {}
 }

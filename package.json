@@ -16,6 +16,8 @@
     "npm": ">=8.1"
   },
   "scripts": {
+    "start": "node ./build/index.js",
+    "dev": "npx carna start -w",
     "analyse": "npx carna analyse",
     "build": "npx carna build",
     "test": "npx carna test",
@@ -37,7 +39,9 @@
   ],
   "dependencies": {
     "@types/pino": "6.3.11",
-    "pino": "6.13.3"
+    "dotenv": "10.0.0",
+    "pino": "6.13.3",
+    "yup": "0.32.11"
   },
   "devDependencies": {
     "@types/node": "16.10.3",

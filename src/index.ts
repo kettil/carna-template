@@ -1,19 +1,23 @@
-import pino, { final } from 'pino';
+/* eslint-disable node/no-sync -- initialization file */
+import { resolve } from 'path';
+import dotenv from 'dotenv';
+import pino, { final, stdSerializers } from 'pino';
 import { app } from './lib/app';
+import { envSchema, yupOptions } from './lib/schemas';
 
 if (require.main !== module) {
   throw new Error('The file must be called directly via node.js');
 }
 
-// dotenv.config({ path: path.resolve(process.cwd(), process.env.DOTENV_CONFIG_PATH ?? '.env') });
-// const env = yupSchema.validateSync(process.env, schemaOptions);
+dotenv.config({ path: resolve(process.cwd(), process.env.DOTENV_CONFIG_PATH ?? '.env') });
 
-const { env } = process;
+const env = envSchema.validateSync(process.env, yupOptions);
+
 const log = pino({
-  level: env.NODE_ENV === 'production' ? 'warn' : 'trace',
+  level: env.LOG_LEVEL,
   serializers: {
-    err: pino.stdSerializers.err,
-    error: pino.stdSerializers.err,
+    err: stdSerializers.err,
+    error: stdSerializers.err,
   },
 });
 
