@@ -1,11 +1,11 @@
 {
-  "name": "placeholder-package-name",
+  "name": "package-name",
   "version": "0.1.0",
   "description": "",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "bin": {
-    "placeholder-package-name": "build/bin/index.js"
+    "package-name": "build/bin/index.js"
   },
   "private": true,
   "license": "ISC",
