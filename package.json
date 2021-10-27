@@ -22,7 +22,7 @@
     "build": "npx carna build",
     "test": "npx carna test",
     "precarna:build": "rm -rf ./build ./packages/*/build",
-    "prepare": "[ \"$CI\" != \"\" ] || husky install ./node_modules/carna/configs/husky"
+    "prepare": "[ \"$CI\" != \"\" ] || ( ls node_modules/husky > /dev/null 2>&1 && husky install ./node_modules/carna/configs/husky )"
   },
   "repository": {
     "type": "git",
