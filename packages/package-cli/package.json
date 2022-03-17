@@ -30,7 +30,7 @@
     "access": "public"
   },
   "dependencies": {
-    "pino": "6.13.3"
+    "pino": "7.9.0"
   },
   "devDependencies": {
     "@types/pino": "6.3.12"
